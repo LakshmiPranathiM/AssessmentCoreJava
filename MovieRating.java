@@ -18,7 +18,14 @@ public class MovieRating {
 			//reading array elements from the user   
 			arr[i]=sc.nextInt();  
 		}  
-		//System.out.println(arr);
+		//System.out.println(arr[2]);
+		
+		int[] subArr= new int[4];
+		int max= 0;
+		for (int i=0 ; i<subArr.length;i++) {
+			max +=arr[i];
+		}
+		System.out.println("The maximum sum for any contiguous subarray in " + max);
 	}
 
 }
